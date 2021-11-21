@@ -16,3 +16,11 @@ resilience4j.circuitbreaker:
     bactoriaccc:
       baseConfig: default
       minimumNumberOfCalls: 2
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
