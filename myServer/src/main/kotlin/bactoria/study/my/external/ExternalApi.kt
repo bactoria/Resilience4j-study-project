@@ -18,7 +18,7 @@ class ExternalApi {
 	}
 
 	companion object {
-		private const val externalHost = "http://localhost:9090"
+		private const val externalHost = "http://localhost:8081"
 		val webClientBuilder = WebClient.builder().baseUrl(externalHost)
 	}
 }
