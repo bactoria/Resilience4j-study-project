@@ -25,10 +25,14 @@ subprojects {
 
 	dependencies {
 		implementation("org.springframework.boot:spring-boot-starter-web")
+		implementation("org.springframework.boot:spring-boot-starter-webflux")
+		implementation("org.springframework.boot:spring-boot-starter-aop")
+		implementation("org.springframework.boot:spring-boot-starter-actuator")
 		implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 		implementation("org.jetbrains.kotlin:kotlin-reflect")
 		implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 		testImplementation("org.springframework.boot:spring-boot-starter-test")
+		implementation("io.github.resilience4j:resilience4j-spring-boot2:1.7.1")
 	}
 
 	tasks.withType<KotlinCompile> {
